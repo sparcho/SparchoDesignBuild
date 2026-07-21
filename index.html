@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amber 131 · Builder Ops</title>
+<style>
+:root{
+  --plane:#efece4; --card:#fcfbf7; --card-2:#f6f3ec;
+  --ink-1:#191712; --ink-2:#57534a; --ink-3:#8f897d;
+  --hair:rgba(20,16,10,.12); --accent:#ead24a; --accent-deep:#b98f14; --accent-wash:#f6ecb4; --good:#0c8a0c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:
+ radial-gradient(120% 90% at 85% -10%, #f6f0dc 0%, var(--plane) 46%);
+ color:var(--ink-1);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+.card{width:min(760px,100%);background:var(--card);border:1px solid var(--hair);border-radius:26px;
+ padding:44px 46px 34px;box-shadow:0 24px 70px -30px rgba(30,22,8,.35)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.6px;color:var(--ink-2);
+ background:var(--card-2);border:1px solid var(--hair);border-radius:999px;padding:6px 13px}
+.live{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 0 4px rgba(12,138,12,.15)}
+h1{font-size:40px;letter-spacing:-.6px;line-height:1.05;margin:20px 0 6px;font-weight:750}
+h1 .a{color:var(--accent-deep)}
+.sub{color:var(--ink-2);font-size:15px;max-width:52ch}
+.ribbon{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0 8px}
+.stat{background:var(--card-2);border:1px solid var(--hair);border-radius:16px;padding:14px 15px}
+.stat .l{font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-3)}
+.stat .v{font-size:22px;font-weight:730;letter-spacing:-.4px;margin-top:5px}
+.stat .v.ok{color:var(--good)}
+.stat .s{font-size:10.5px;color:var(--ink-3);margin-top:2px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 6px}
+.tabpill{font-size:12.5px;color:var(--ink-2);background:var(--card-2);border:1px solid var(--hair);
+ border-radius:999px;padding:7px 14px}
+.tabpill.on{background:var(--accent);border-color:transparent;color:#241d05;font-weight:650}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;
+ margin-top:26px;padding-top:18px;border-top:1px solid var(--hair);font-size:12px;color:var(--ink-3)}
+.lock{display:inline-flex;align-items:center;gap:7px}
+</style>
+</head>
+<body>
+<div class="card">
+  <span class="eyebrow"><span class="live"></span>Live · dashboard in active build</span>
+  <h1>Amber 131 · <span class="a">Builder Ops</span></h1>
+  <p class="sub">Private operations dashboard for Plot A-131, Emerald Hills Sec-65, Gurugram — Stilt + 4 floors + terrace. Design, cost, cashflow and site coordination in one place, driven live off BOQ v23.</p>
+
+  <div class="ribbon">
+    <div class="stat"><div class="l">Interior fit-out</div><div class="v">₹1.51<span style="font-size:14px">Cr</span></div><div class="s">A–K · BOQ v23</div></div>
+    <div class="stat"><div class="l">All-in construction</div><div class="v">₹2.53<span style="font-size:14px">Cr</span></div><div class="s">interior + civil shell</div></div>
+    <div class="stat"><div class="l">Paid to date</div><div class="v ok">₹1.57<span style="font-size:14px">Cr</span></div><div class="s">as-of 15 Jul 2026</div></div>
+    <div class="stat"><div class="l">Reconciliation</div><div class="v">✓ 0</div><div class="s">BV-01 live check</div></div>
+  </div>
+
+  <div class="tabs">
+    <span class="tabpill on">Timeline</span>
+    <span class="tabpill">Finance</span>
+    <span class="tabpill">BOQ explorer</span>
+    <span class="tabpill">Stakeholders</span>
+    <span class="tabpill">Risk &amp; flags</span>
+  </div>
+
+  <div class="foot">
+    <span class="lock">🔒 Password-gated before live financials publish</span>
+    <span>Sparcho × Rajiv · scope BOQ v23 (20 Jul 2026)</span>
+  </div>
+</div>
+</body>
+</html>
